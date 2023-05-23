@@ -2,39 +2,44 @@
   "name": "augmented-initiative",
   "title": "Augmented Initiative",
   "description": "Adds HP, Structure, Heat, Stress to the combat tracker",
-  "version": "This is auto replaced",
+  "version": "1.0.0",
   "library": "false",
-  "system": ["lancer"],
   "manifestPlusVersion": "1.0.0",
-  "minimumCoreVersion": "9",
-  "compatibleCoreVersion": "9",
+  "compatibility": {
+    "minimum": "9",
+    "verified": "9"
+  },
   "authors": [
-    {"name":"Aron Morris",
-    "url":"https://github.com/aronmorris"
+    {
+      "name": "Aron Morris",
+      "url": "https://github.com/aronmorris"
     },
     {
       "name": "The League of Extraordinary FVTT Developers",
       "url": "https://github.com/League-of-Foundry-Developers"
     }
   ],
-  "dependencies": [
-    {
-      "name": "lancer",
-      "type": "system"
-    }
-  ],
-  "conflicts": [
-    
-  ],
+  "relationships": {
+    "requires": [
+      {
+        "id": "lancer",
+        "type": "system"
+      }
+    ],
+    "system": [
+      "lancer"
+    ]
+  },
+  "conflicts": [],
   "esmodules": [
     "scripts/module.js"
   ],
   "styles": [
     "styles/module.css"
   ],
-  "url": "This is auto replaced",
-  "manifest": "This is auto replaced",
-  "download": "This is auto replaced",
+  "url": "https://github.com/aronmorris/augmented-initiative",
+  "manifest": "https://github.com/aronmorris/augmented-initiative/releases/latest/download/module.json",
+  "download": "https://github.com/aronmorris/augmented-initiative/releases/download/v1.0.0/module.zip",
   "media": [
     {
       "type": "icon",
